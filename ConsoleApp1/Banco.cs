@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Banco
-    {
+    
+   
         public enum TipoConta
         { 
             Corrente,
@@ -38,7 +38,6 @@ namespace ConsoleApp1
         {
             public string Nome { get; init; }
             public string IdCliente { get; init; }
-
             public string Endereço { get; init; }
 
         }
@@ -81,7 +80,23 @@ namespace ConsoleApp1
                 }
                 return false;
             }
+
+        public string informacoesConta()
+        {
+            return $"Conta: {NumeroConta}, Nome: {nomeCliente.Nome}, Saldo disponível: {Saldo:C} Tipo da Conta: {Tipo}";
+        }
+
+        public void ExibirTransacoes()
+        {
+            Console.WriteLine("Histórico de transações");
+
+            foreach (var transacao in _transacoes)
+            {
+                Console.WriteLine(transacao);
+            }
         }
 
     }
-}
+
+    }
+

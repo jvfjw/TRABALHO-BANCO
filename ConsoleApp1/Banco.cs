@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,9 +37,9 @@ namespace ConsoleApp1
 
         public record Cliente 
         {
-            public string Nome { get; init; }
-            public string IdCliente { get; init; }
-            public string Endereço { get; init; }
+            public string? Nome { get; init; }
+            public string? IdCliente { get; init; }
+            public string? Endereço { get; init; }
 
         }
 
@@ -81,10 +82,11 @@ namespace ConsoleApp1
                 return false;
             }
 
-        public string informacoesConta()
+        public override string ToString()
         {
             return $"Conta: {NumeroConta}, Nome: {nomeCliente.Nome}, Saldo disponível: {Saldo:C} Tipo da Conta: {Tipo}";
-        }
+        } 
+        
 
         public void ExibirTransacoes()
         {

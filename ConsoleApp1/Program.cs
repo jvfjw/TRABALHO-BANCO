@@ -1,19 +1,29 @@
-﻿using ConsoleApp1;
+﻿using System;
 
-Cliente cliente = new Cliente()
-{
-    Nome = "João Silva",
-    IdCliente = "12345",
-    Endereço = "Rua Exemplo, 123"
-};
+namespace ConsoleApp1 {
 
-TipoConta tipoConta = TipoConta.Corrente;
-ContaDoBanco conta = new ContaDoBanco(1001, 500.0, cliente, tipoConta);
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
-conta.Sacar(200, "Refrigerante e vinho");
+            Cliente cliente = new Cliente()
+            {
+                Nome = "João Silva",
+                IdCliente = "12345",
+                Endereço = "Rua Exemplo, 123"
+            };
 
-conta.Depositar(300, "Bolsa família");
+            
+            ContaDoBanco conta = new ContaDoBanco(1001, 500.0, cliente, TipoConta.Corrente);
 
-Console.WriteLine(conta.informacoesConta());
+            conta.Sacar(200, "Refrigerante e vinho");
 
-conta.ExibirTransacoes();
+            conta.Depositar(300, "Bolsa família");
+
+            Console.WriteLine(conta);
+
+            conta.ExibirTransacoes();
+        }
+    }
+}

@@ -1,0 +1,22 @@
+﻿<Window x:Name="JanelaPrincipal" x:Class="Gui_banco.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gui_banco"
+        xmlns:UserControls="clr-namespace:Gui_banco.View.UserControls"
+        
+        mc:Ignorable="d"
+        Title="Gui Banco" Height="763.7" Width="1366" Background="#FFD2F3F3" Foreground="White" FontFamily="Arial">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <UserControls:MenuBar/>
+    </Grid>
+
+</Window>
+

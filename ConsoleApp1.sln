@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D10736C7-A513-4BB8-936F-04227DF6D503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gui banco", "Gui banco\Gui banco.csproj", "{145830E5-B294-4CAB-AD0B-87B0E7734EB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D10736C7-A513-4BB8-936F-04227DF6D503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10736C7-A513-4BB8-936F-04227DF6D503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10736C7-A513-4BB8-936F-04227DF6D503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145830E5-B294-4CAB-AD0B-87B0E7734EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145830E5-B294-4CAB-AD0B-87B0E7734EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145830E5-B294-4CAB-AD0B-87B0E7734EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145830E5-B294-4CAB-AD0B-87B0E7734EB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Gui_banco.View.UserControls.DadosCliente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Gui_banco.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="70" d:DesignWidth="683">
+    <Grid>
+        <TextBlock  Name="nomeCliente"
+             Grid.Row="1"
+             TextAlignment="Left"
+             Text="Teste"
+             FontSize="30"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Center"
+             Foreground="Black"
+             Margin="5, 0, 0, 0"
+             Height="70"
+             Width="683"
+             />
+        <TextBlock Name="idCliente"
+             Grid.Row="1"
+             HorizontalAlignment="Center"
+             VerticalAlignment="Center"
+             Text="Teste"
+             FontSize="30"
+             TextAlignment="Center"
+             Foreground="Black"
+             Margin="0, 0, 0, 0"
+             Height="70"
+             Width="683"
+         />
+
+        <TextBlock Name="enderecoCliente"
+             Grid.Row="1"
+             HorizontalAlignment="Right"
+             VerticalAlignment="Center"
+             Text="Teste"
+             FontSize="30"
+             TextAlignment="Right"
+             Foreground="Black"
+             Margin="0, 0, 5, 0"
+             Height="70"
+            Width="683"
+            />
+    </Grid>
+</UserControl>

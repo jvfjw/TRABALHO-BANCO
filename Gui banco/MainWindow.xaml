@@ -12,11 +12,64 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
-            <RowDefinition />
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <UserControls:DadosCliente x:Name="ClienteColuna1"
+                                       Grid.Row="1" Grid.Column="0"
+                                       />
+            <UserControls:DadosCliente x:Name="ClienteColuna2"
+                                       Grid.Row="1" Grid.Column="1"                                      
+                                       />
+        </Grid>
+        
+        
+
+
         <UserControls:MenuBar/>
+        <TextBlock Grid.Row="3"
+            Panel.ZIndex="1"
+            Text="Aqui você não irá encontrar nada, mas seja muito bem vindo ao aplicativo que não funciona"
+            TextAlignment="Center"
+            FontSize="15"
+            Background="DarkBlue"
+                 
+        />
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition/>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <UserControls:telaSaldo Loaded="telaSaldo_Loaded" x:Name="tSaldo"/>
+
+
+                <UserControls:BotaoOperacao 
+            Grid.Row="0"
+            Grid.Column="1"
+            Loaded="BotaoOperacao_Loaded"
+            x:Name="btnConfirmar"
+        />
+
+            
+        </Grid>
     </Grid>
+    
 
 </Window>
 

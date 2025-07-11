@@ -18,7 +18,7 @@
                 </MenuItem>
 
                 <MenuItem Header="Ajuda">
-
+                    <MenuItem Header="Você não receberá ajuda aqui!"/>
                 </MenuItem>
             </Menu>
             <Grid Grid.Row="1">
